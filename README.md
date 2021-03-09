@@ -25,7 +25,7 @@ Bill de Blasio, mayor of New York City, is in a bit of a pickle. Indeed, his pol
 - Data format is correct
 - No blank spaces (ex: " I love python " => "I love python")
 
-##Nice-to-have features
+## Nice-to-have features
 
 The more rows of data you use, the better. However, pay attention that the more data you have, the longer each operation needs to execute.
 Add new features computed using the features present that you think are going to be useful.
