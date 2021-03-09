@@ -1,11 +1,11 @@
 # NYC-Crashes
 
-Data preprocessing - NYC Motor Vehicle Crashes
-Repository: nyc-crashes
-Type of Challenge: Consolidation
-Duration: 2 days
-Deadline: 10/03/2021 05:00 PM
-Team challenge : solo
+- Data preprocessing - NYC Motor Vehicle Crashes
+- Repository: nyc-crashes
+- Type of Challenge: Consolidation
+- Duration: 2 days
+- Deadline: 10/03/2021 05:00 PM
+- Team challenge : solo
 
 ## Mission objectives
 
