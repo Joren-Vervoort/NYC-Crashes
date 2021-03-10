@@ -30,3 +30,21 @@ Bill de Blasio, mayor of New York City, is in a bit of a pickle. Indeed, his pol
 The more rows of data you use, the better. However, pay attention that the more data you have, the longer each operation needs to execute.
 Add new features computed using the features present that you think are going to be useful.
 Apply the preprocessing steps needed so that a future machine learning model can make the best use out of it (feature selection, feature engineering, feature normalization, and resampling)
+
+## The Repository
+
+In this repository there are different versions of cleaned data from the same origin .csv file:
+1. Clean_Data_BAD
+2. Clean_Data_GOOD_ENOUGH
+
+Each of these contain a .ipynb file containing the cleaning process and a .csv file with the results of this cleaning process.
+
+#### Description of the different versions
+
+1. Clean_Data_BAD
+
+In this version of the cleaned data, the main focus is on the "on_street_name", if this value is not present in a row in the dataframe, it will have been removed. The rest of the file is than processed as described in the .ipynb file. The results can be checked in the .csv file and contains 73,991 rows of data.
+
+2. Clean_Data_GOOD_ENOUGH
+
+In this version of the cleaned data, the main focus is also on the "on_street_name", but missing values which are present in the cross_street_name column are added. if there are still a missing value in a row, in the on_street_name column in the dataframe, it will have been removed. The rest of the file is than processed as described in the .ipynb file. The results can be checked in the .csv file and contains 99,958 rows of data.
