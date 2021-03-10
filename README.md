@@ -54,6 +54,8 @@ In this version of the cleaned data, the main focus is also on the "on_street_na
 
 In this version of the cleaned data, the missing values of the columns: "zip_code", "borough" and "on_street_name" are added using an API. The API requires the latitude and longitude to return the needed information about the location. Because there are 38,562 missing values in the "zip_code" column, the program takes very long to retrieve the information from the API. Because of a lack of time, there is no .csv file for this version. But if run correctly, it should return more rows of data, especially more complete data than the Clean_Data_GOOD_ENOUGH version.
 
+Information about the used API in this version can be found here: https://developers.arcgis.com/rest/geocode/api-reference/geocoding-reverse-geocode.htm
+
 ## Things to improve
 
 - Improving the run time of the Clean_Data_Good .ipynb file
