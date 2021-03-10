@@ -36,10 +36,11 @@ Apply the preprocessing steps needed so that a future machine learning model can
 In this repository there are different versions of cleaned data from the same origin .csv file:
 1. Clean_Data_BAD
 2. Clean_Data_GOOD_ENOUGH
+3. Clean_Data_GOOD (this has no .csv file, reason explained later)
 
 Each of these contain a .ipynb file containing the cleaning process and a .csv file with the results of this cleaning process.
 
-#### Description of the different versions
+### Description of the different versions
 
 1. Clean_Data_BAD
 
@@ -48,3 +49,15 @@ In this version of the cleaned data, the main focus is on the "on_street_name", 
 2. Clean_Data_GOOD_ENOUGH
 
 In this version of the cleaned data, the main focus is also on the "on_street_name", but missing values which are present in the cross_street_name column are added. if there are still a missing value in a row, in the on_street_name column in the dataframe, it will have been removed. The rest of the file is than processed as described in the .ipynb file. The results can be checked in the .csv file and contains 99,958 rows of data.
+
+3. Clean_Data_GOOD
+
+In this version of the cleaned data, the missing values of the columns: "zip_code", "borough" and "on_street_name" are added using an API. The API requires the latitude and longitude to return the needed information about the location. Because there are 38,562 missing values in the "zip_code" column, the program takes very long to retrieve the information from the API. Because of a lack of time, there is no .csv file for this version. But if run correctly, it should return more rows of data, especially more complete data than the Clean_Data_GOOD_ENOUGH version.
+
+## Things to improve
+
+- Improving the run time of the Clean_Data_Good .ipynb file
+- More regex checks of the values of the different column to ensure the data is filled in correctly.
+
+# THANK YOU FOR READING!
+
